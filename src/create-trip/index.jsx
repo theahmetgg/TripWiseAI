@@ -14,7 +14,9 @@ function CreateTrip() {
           <h2 className="text-xl my-3 font-medium">
             Tercih ettiğiniz yer neresidir?
           </h2>
-          <GooglePlacesAutocomplete apiKey="AIzaSyAHx-TGltJqjRSLAQdc5e-4srB62H3qPcI" />
+          <GooglePlacesAutocomplete
+            apiKey={import.meta.env.VITE_GOOGLE_PLACE_API_KEY}
+          />
         </div>
       </div>
     </div>
