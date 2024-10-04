@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { Button } from "../ui/button";
 
 function Hero() {
@@ -14,7 +15,10 @@ function Hero() {
         Kişisel seyahat planlayıcınız ve gezi küratörünüz, ilgi alanlarınıza ve
         bütçenize göre özel rotalar oluşturur.
       </p>
-      <Button>Hadi Başlayalım</Button>
+
+      <Link to={"/create-trip"}>
+        <Button>Hadi Başlayalım</Button>
+      </Link>
     </div>
   );
 }
